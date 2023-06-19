@@ -1,0 +1,146 @@
+/* universal css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT STYLES */
+
+* {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS TO BE USED */
+
+.text-white {
+  color: #ffffff !important;
+}
+.text-primary {
+  color: #4540e1 !important;
+}
+.text-success {
+  color: #42ba96 !important;
+}
+::selection {
+  color: #ffffff;
+  background: #4169e1;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.375rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.3;
+}
+
+/* POSITIONING */
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-end {
+  text-align: end;
+}
+
+/* grid css */
+
+.container { width: 100%; margin-left: auto; margin-right: auto; }
+.container-fluid { width: 96%; margin-left: auto; margin-right: auto; }
+.row {position: relative;  width: 100%; }
+.row::after { content: ""; display: table; clear: both; }
+.row [class^="col"] { float: left; min-height: 0.125rem; }
+.col-1-sm {width: 8.33%;}
+.col-2-sm {width: 16.66%;}
+.col-3-sm {width: 25%;}
+.col-4-sm {width: 33.33%;}
+.col-5-sm {width: 41.66%;}
+.col-6-sm {width: 50%;}
+.col-7-sm {width: 58.33%;}
+.col-8-sm {width: 66.66%;}
+.col-9-sm {width: 75%;}
+.col-10-sm {width: 83.33%;}
+.col-11-sm {width: 91.66%;}
+.col-12-sm {width: 100%;}
+.hidden-in-sm {display: none;}
+
+@media only screen and (min-width: 48em) {  /* 768px */
+	.col-1-tb {width: 8.33%;}
+	.col-2-tb {width: 16.66%;}
+	.col-3-tb {width: 25%;}
+	.col-4-tb {width: 33.33%;}
+	.col-5-tb {width: 41.66%;}
+	.col-6-tb {width: 50%;}
+	.col-7-tb {width: 58.33%;}
+	.col-8-tb {width: 66.66%;}
+	.col-9-tb {width: 75%;}
+	.col-10-tb {width: 83.33%;}
+	.col-11-tb {width: 91.66%;}
+	.col-12-tb {width: 100%;}
+	.hidden-in-sm {display: block;}
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.col-13 {width: 10%;}
+	.col-14 {width: 80%;}
+	.hidden-in-sm {display: block;}
+}
+
+/* grid css ends */
