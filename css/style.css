@@ -1,0 +1,107 @@
+
+.bglook {
+  background-color: #030a09;
+}
+.halftone {
+  background-color: #021f1b;
+  height: 60vh;
+}
+
+.hidden-sm {
+  display: block;
+}
+.formcontainer {
+  position: relative;
+}
+.class {
+  position: absolute;
+  top: 4em;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(6, 147, 227, 0.4);
+}
+.form-wrapper {
+  padding: 1em;
+}
+.formtitle h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.formtitle p, .para {
+  margin: 0.5em 0 2em;
+  font-size: .875em;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+.form-contents sup {
+  font-weight: bold;
+  color: #ff0000;
+}
+.formcontainer a {
+  color: #87cefa;
+  text-decoration: underline;
+}
+.formspace {
+  padding: 0 0 1em;
+}
+.form-contents input[type="text"] {
+  padding: 0 0 0 0.8rem;
+}
+.form-contents input {
+  width: 100%;
+  height: 3em;
+  border-radius: 0.25em;
+  border: 1px solid #909090;
+  background-color: #ffffff;
+}
+.form-contents label {
+  font-size: .875em;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
+.form-contents select {
+  height: 3em;
+  width: 100%;
+  border-radius: 0.25em;
+  border: 1px solid #909090;
+  background-color: #ffffff;
+}
+.form-contents textarea:focus, .form-contents input:focus, .form-contents select:focus,
+.form-contents input[type]:focus {
+  border-color: rgba(6, 147, 227, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(6, 147, 227, 0.4);
+  outline: 0 none;
+}
+.form-contents .btn {
+  outline: 0;
+  cursor: pointer;
+  padding: 8px 1em;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #87cefa;
+  border: 1px solid #87cefa;
+}
+.form-contents .btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: 0 1px 1px rgba(23, 198, 229, 0.1) inset, 0 0 8px rgba(6, 147, 227, 0.4);
+}
+
+
+@media only screen and (min-width: 48em) {  /* 768px */
+  .halftone {
+    height: 40vh;
+  }
+  .form-wrapper {
+    padding: 2em;
+  }
+}
+
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .halftone {
+    height: 50vh;
+  }
+  .formtitle h2 {
+    font-size: 2em;
+  }
+}
